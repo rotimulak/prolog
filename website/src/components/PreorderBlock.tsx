@@ -70,7 +70,7 @@ export function PreorderBlock() {
 
             <p
               className="text-stone-500 mt-6"
-              style={{ fontSize: '21px' }}
+              style={{ fontSize: '21px', marginTop: '45px' }}
             >
               Для организаций, сообществ и&nbsp;культурных центров
             </p>
