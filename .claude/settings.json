@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show:*)",
+      "Bash(python:*)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:www.embla-carousel.com)",
+      "Bash(magick:*)",
+      "Bash(convert:*)"
+    ]
+  }
+}
