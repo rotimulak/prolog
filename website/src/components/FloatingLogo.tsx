@@ -17,21 +17,21 @@ export function FloatingLogo() {
     const original = document.getElementById('hero-logo')
     if (!floating || !original) return
 
-    // Measure the original logo position (hero is position:fixed so
-    // getBoundingClientRect returns a viewport-relative rect that does
-    // not depend on scrollY).
-    const rect = original.getBoundingClientRect()
-
     // Hide the original — the floating clone takes over
     original.style.visibility = 'hidden'
 
-    const startW = rect.width        // 320
-    const startTop = rect.top
-    const startLeft = rect.left
-    const endW = startW / 5           // 64
     const endTop = 20
 
     const update = () => {
+      // Re-measure the original on every frame so we track layout
+      // shifts caused by font loading, resize, etc.  Hero is
+      // position:fixed so getBoundingClientRect is stable vs scroll.
+      const rect = original.getBoundingClientRect()
+      const startW = rect.width        // 320
+      const startTop = rect.top
+      const startLeft = rect.left
+      const endW = startW / 5           // 64
+
       const scrollY = window.scrollY
       const vh = window.innerHeight
       const begin = vh * (2 / 3)      // animation starts

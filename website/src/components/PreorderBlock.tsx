@@ -92,7 +92,7 @@ export function PreorderBlock() {
               </p>
             </div>
 
-            <div className="mt-auto pt-10 flex flex-col gap-4">
+            <div className="mt-auto pt-4 flex flex-col gap-4">
               <div className="grid grid-cols-2 gap-3">
                 <input
                   type="text"

@@ -39,7 +39,7 @@ export function HeroBlock() {
           src="/images/logo.png"
           alt="Дружба народов"
           style={{ width: '320px' }}
-          className="w-auto object-contain"
+          className="object-contain"
         />
 
         {/* Headline below logo */}

@@ -27,7 +27,7 @@ export function TraditionsBlock() {
         </div>
 
         {/* Right — Classic authors gallery */}
-        <div className="flex flex-col gap-8" style={{ paddingTop: '30px' }}>
+        <div className="flex flex-col gap-8" style={{ paddingTop: '38px' }}>
           <h2
             className="text-stone-900 font-semibold"
             style={{ fontSize: '20px', fontFamily: "'Fact', sans-serif" }}
